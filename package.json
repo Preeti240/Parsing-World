@@ -1,0 +1,34 @@
+{
+  "name": "lr1-parser-vis",
+  "version": "1.0.0",
+  "description": "Create LR(1) parsers in your browser and see how they work.",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "parcel build --public-url 'https://soroushj.github.io/lr1-parser-vis/' src/index.html",
+    "dev": "parcel --public-url '.' src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soroushj/lr1-parser-vis.git"
+  },
+  "keywords": [
+    "parser",
+    "lr-parser",
+    "canonical-lr-parser"
+  ],
+  "author": "Soroush Javadi <soroush.javadi@gmail.com> (https://github.com/soroushj)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/soroushj/lr1-parser-vis/issues"
+  },
+  "homepage": "https://github.com/soroushj/lr1-parser-vis#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "rimraf": "^2.7.1",
+    "sass": "^1.26.10"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.10.4",
+    "normalize.css": "^8.0.1"
+  }
+}
